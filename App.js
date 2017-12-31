@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 'use strict';
 
 import React, { Component } from 'react';
@@ -15,7 +9,7 @@ import {
   NavigatorIOS
 } from 'react-native';
 
-import SearchPage from './SearchPage';
+import Login from './components/auth/Login';
 
 export default class App extends Component<{}> {
   render() {
@@ -23,8 +17,8 @@ export default class App extends Component<{}> {
       <NavigatorIOS
         style={styles.container}
         initialRoute={{
-          title: 'Join a League',
-          component: SearchPage
+          title: 'Login',
+          component: Login
         }}/>
     );
   }
